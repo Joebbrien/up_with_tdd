@@ -1,0 +1,21 @@
+{
+  "name": "firstTDD",
+  "version": "1.0.0",
+  "description": "Simple test deiven development app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": " mocha test/test.js"
+  },
+  "repository": "https://github.com/Joebbrien/up_with_tdd.git",
+  "author": "Joebbrien <job.bundabunda@gmail.com\ngit config --global user.name joebbrien\ngit config --global user.email job.bundabunda@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10",
+    "save": "^2.3.3",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  }
+}
