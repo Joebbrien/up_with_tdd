@@ -4,12 +4,11 @@ const userSchema = new mongoose.Schema(
   {
     firstname: {
       type: String,
-      unique: true,
       required: true,
     },
     status: {
       type: String,
-      default:"Closed",
+      default:"Active",
     },
     lastname: {
       type: String,
