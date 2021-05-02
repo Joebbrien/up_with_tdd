@@ -5,17 +5,25 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": " mocha test/test.js"
+    "test": "DEBUG=server:debug NODE_ENV=test mocha --exit -- ./test/*.test.js "
   },
   "repository": "https://github.com/Joebbrien/up_with_tdd.git",
   "author": "Joebbrien <job.bundabunda@gmail.com\ngit config --global user.name joebbrien\ngit config --global user.email job.bundabunda@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chai": "^4.3.4",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
+    "husky": "^6.0.0",
     "mocha": "^6.0.2",
+    "mongoose": "^5.12.7",
     "nodemon": "^1.18.10",
+    "nyc": "^15.1.0",
     "save": "^2.3.3",
     "should": "^13.2.3",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "yup": "^0.32.9"
   }
 }
