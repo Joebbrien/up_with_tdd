@@ -7,6 +7,6 @@ app.use(bodyParsar.urlencoded({ extended: true }));
 app.use(bodyParsar.json());
 
 app.post("/create",userControllers.createUser);
-app.get("/list");
-app.update("/update/:id");
-app.delete("/delete/:id");
+app.get("/list", userControllers.listUsers);
+app.update("/update/:id", userControllers.updateUser);
+app.delete("/delete/:id", userControllers.deleteUser);
